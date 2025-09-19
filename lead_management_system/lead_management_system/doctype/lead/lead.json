@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LEAD{######}",
+ "creation": "2025-09-18 20:57:12.439425",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "lead_name",
+  "status",
+  "column_break_rkso",
+  "substatus",
+  "section_break_ckrw",
+  "assigned_team",
+  "contact_info",
+  "column_break_eopb",
+  "assigned_user",
+  "source",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lead Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Cold Calling\nLead\nRegister\nCustomer"
+  },
+  {
+   "fieldname": "column_break_rkso",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "substatus",
+   "fieldtype": "Select",
+   "label": "Substatus",
+   "options": "Pending\nUnder Work\nUnder Review\nCompleted"
+  },
+  {
+   "fieldname": "section_break_ckrw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "assigned_team",
+   "fieldtype": "Link",
+   "label": "Assigned Team",
+   "options": "Team"
+  },
+  {
+   "fieldname": "contact_info",
+   "fieldtype": "Small Text",
+   "label": "Contact Info"
+  },
+  {
+   "fieldname": "column_break_eopb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "assigned_user",
+   "fieldtype": "Link",
+   "label": "Assigned User",
+   "options": "User"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-18 21:21:32.304249",
+ "modified_by": "Administrator",
+ "module": "Lead Management System",
+ "name": "Lead",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
