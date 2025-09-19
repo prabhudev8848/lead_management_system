@@ -68,12 +68,12 @@ app_license = "mit"
 # ------------
 
 # before_install = "lead_management_system.install.before_install"
-# after_install = "lead_management_system.install.after_install"
+after_install = "lead_management_system.install_config.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "lead_management_system.uninstall.before_uninstall"
+before_uninstall = "lead_management_system.uninstall_config.uninstall.before_uninstall"
 # after_uninstall = "lead_management_system.uninstall.after_uninstall"
 
 # Integration Setup
